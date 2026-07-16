@@ -1,0 +1,3712 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hive.v2</name>
+    </assembly>
+    <members>
+        <member name="T:Hive.v2.Controllers.BarcodeTypeController">
+            <summary>
+            Barcode Type Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.BarcodeTypeController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Barcode Type Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.BarcodeTypeController.GetAll(System.String)">
+            <summary>
+            Get a list of barcode types based on a search query 
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.BarcodeTypeController.GetById(System.String)">
+            <summary>
+            Get a barcode type by id
+            </summary>
+            <param name="BARCOD_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.BarcodeTypeController.Post(System.String,Hive.Common.Models.BarcodeTypeRequest)">
+            <summary>
+            Create a barcode type
+            </summary>
+            <param name="BARCOD_ID"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.BarcodeTypeController.Put(System.String,Hive.Common.Models.BarcodeTypeRequest)">
+            <summary>
+            Create a barcode type
+            </summary>
+            <param name="BARCOD_ID"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.BatchController">
+            <summary>
+            Batch Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.BatchController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Batch Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.BatchController.GetAll(System.String)">
+            <summary>
+            Get a batch
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.BatchController.GetByTypeAndId(System.String,System.String)">
+            <summary>
+            Get a batch by type and id
+            </summary>
+            <param name="BAT_TYP"></param>
+            <param name="BAT_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.CompanyController">
+            <summary>
+            Company Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CompanyController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Company Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CompanyController.GetAll(System.String)">
+            <summary>
+            Get a company
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.CompanyController.GetById(System.Int32)">
+            <summary>
+            Get a company by id
+            </summary>
+            <param name="KEY_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.CustomerCategoryController">
+            <summary>
+            Customer Category Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerCategoryController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Customer Category Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerCategoryController.GetAll(System.String)">
+            <summary>
+            Get a customer category
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerCategoryController.GetById(System.String)">
+            <summary>
+            Get a customer category by id
+            </summary>
+            <param name="CATEG_COD"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerCategoryController.Post(System.String,Hive.Common.Models.CustomerCategoryRequest)">
+            <summary>
+            Create a new customer category
+            </summary>
+            <param name="CATEG_COD"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.CustomerControlController">
+            <summary>
+            Customer Control Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerControlController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Customer Control Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerControlController.Get(System.String)">
+            <summary>
+            Get a customer control
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerControlController.GetById(System.Int32)">
+            <summary>
+            Get a customer control by id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.CustomerController">
+            <summary>
+            Customer Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Customer Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerController.Get(System.String)">
+            <summary>
+            Get a customer
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerController.GetById(System.String)">
+            <summary>
+            Get a customer by id
+            </summary>
+            <param name="CUST_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerController.Post(System.String,Hive.Common.Models.CustomerRequest)">
+            <summary>
+            Create a customer
+            </summary>
+            <param name="CUST_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.CustomerEcommerceRenumberController">
+            <summary>
+            Customer Ecommerce Renumber Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerEcommerceRenumberController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Customer Ecommerce Renumber Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerEcommerceRenumberController.Get(System.String)">
+            <summary>
+            Get a customer ecommerce renumber?
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerEcommerceRenumberController.GetById(System.String,System.String)">
+            <summary>
+            I dont know....
+            </summary>
+            <param name="OLD_CUST_NO"></param>
+            <param name="NEW_CUST_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.CustomerProfileCodeController">
+            <summary>
+            Customer Profile Code Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerProfileCodeController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Customer Profile Code Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerProfileCodeController.Get(System.String)">
+            <summary>
+            Get a list of customer profile codes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerProfileCodeController.GetById(System.String)">
+            <summary>
+            Get a customer profile code
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.CustomerShipToAddressController">
+            <summary>
+            Customer Ship To Address Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerShipToAddressController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Customer Ship To Address Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerShipToAddressController.Get(System.String)">
+            <summary>
+            Get a ship to address
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerShipToAddressController.GetByIds(System.String,System.String)">
+            <summary>
+            Get a ship to address by customer id
+            </summary>
+            <param name="CUST_NO"></param>
+            <param name="SHIP_ADRS_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerShipToAddressController.Post(System.String,System.String,Hive.Common.Models.CustomerShipToAddressRequest)">
+            <summary>
+            Create a ship to address
+            </summary>
+            <param name="CUST_NO"></param>
+            <param name="SHIP_ADRS_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.CustomerTaxCodeController">
+            <summary>
+            Customer Tax Code Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerTaxCodeController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Customer Tax Code Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerTaxCodeController.Get(System.String)">
+            <summary>
+            Get a list of customer tax codes 
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.CustomerTaxCodeController.GetById(System.String)">
+            <summary>
+            Get by tax code
+            </summary>
+            <param name="TAX_COD"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.DistributionController">
+            <summary>
+            Distribution Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.DistributionController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Distribution Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.DistributionController.Get(System.String)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.DistributionController.GetByIds(System.String,System.String,System.String,System.DateTime,System.Int32,System.String)">
+            <summary>
+            Why???
+            </summary>
+            <param name="DIST_GRP"></param>
+            <param name="DIST_TYP"></param>
+            <param name="ACCT_NO"></param>
+            <param name="DIST_DAT"></param>
+            <param name="SEQ_NO"></param>
+            <param name="EVENT_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.DocumentController">
+            <summary>
+            Document Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.DocumentController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Document Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.DocumentController.Get(System.String)">
+            <summary>
+            Get a list of documents
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.DocumentController.GetById(System.String)">
+            <summary>
+            Get a document by id
+            </summary>
+            <param name="DOC_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.DocumentController.POST(System.String,Hive.Common.Models.DocumentHeaderRequest)">
+            <summary>
+            Create a document
+            </summary>
+            <param name="DOC_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.DocumentHistoryController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Document Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.DocumentHistoryController.Get(System.String)">
+            <summary>
+            Get a list of documents
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.DocumentHistoryController.GetById(System.DateTime,System.String)">
+            <summary>
+            Get a document by id
+            </summary>
+            <param name="BUS_DAT"></param>
+            <param name="DOC_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.EcommerceCategoryAssignmentController">
+            <summary>
+            Ecommerce Category Assignment Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.EcommerceCategoryAssignmentController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Ecommerce Category Assingment Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.EcommerceCategoryAssignmentController.Get(System.String)">
+            <summary>
+            Get a list of ecommerce category assingments
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.EcommerceCategoryAssignmentController.GetById(System.String,System.String)">
+            <summary>
+            Get by ids
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="CATEG_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.EcommerceCategoryAssignmentController.Post(System.String,System.String,Hive.Common.Models.EcommerceCategoryAssignmentRequest)">
+            <summary>
+            Create an ecommerce category assingment 
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="CATEG_ID"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.EcommerceCategoryController">
+            <summary>
+            Ecommerce Category Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.EcommerceCategoryController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Ecommerce Category Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.EcommerceCategoryController.Get(System.String)">
+            <summary>
+            Get a list of ecommerce categories
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.EcommerceCategoryController.GetById(System.String)">
+            <summary>
+            Get by id
+            </summary>
+            <param name="CATEG_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.EcommerceCategoryController.Post(System.String,Hive.Common.Models.EcommerceCategoryRequest)">
+            <summary>
+            Create a new ecommerce category
+            </summary>
+            <param name="request"></param>
+            <param name="CATEG_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.GiftCardActivityController">
+            <summary>
+            GiftCard Activity Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.GiftCardActivityController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            GiftCard Activity Controller Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.GiftCardActivityController.Get(System.String)">
+            <summary>
+            Get a list of GiftCard Activities
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.GiftCardActivityController.GetById(System.String,System.Int32)">
+            <summary>
+            Get by ids
+            </summary>
+            <param name="GFC_NO"></param>
+            <param name="SEQ_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.GiftCardActivityController.Post(System.String,Hive.Common.Models.GiftCardActivityRequest)">
+            <summary>
+            Save a giftcard activity by giftcard number
+            </summary>
+            <param name="GFC_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.GiftCardActivityController.PostByIds(System.String,System.Int32,Hive.Common.Models.GiftCardActivityRequest)">
+            <summary>
+            Save a giftcard activity by giftcard number and sequence number
+            </summary>
+            <param name="GFC_NO"></param>
+            <param name="SEQ_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.GiftCardCodeController">
+            <summary>
+            GiftCard Code Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.GiftCardCodeController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            GiftCard Code Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.GiftCardCodeController.Get(System.String)">
+            <summary>
+            Get a list of giftcard codes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.GiftCardCodeController.GetById(System.String)">
+            <summary>
+            Get by id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.GiftCardController">
+            <summary>
+            GiftCard Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.GiftCardController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            GiftCard Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.GiftCardController.Get(System.String)">
+            <summary>
+            Get a list of giftcards
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.GiftCardController.GetById(System.String)">
+            <summary>
+            Get by id
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.GiftCardController.Post(System.String,Hive.Common.Models.GiftCardRequest)">
+            <summary>
+            Create a giftcard
+            </summary>
+            <param name="GFC_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.HelloWorldController">
+            <summary>
+            Hello World Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.HelloWorldController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Hello World Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.HelloWorldController.Index">
+            <summary>
+            Tests connect to api
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.IPaaSSubscriptionController">
+            <summary>
+            IPaaS Subscription Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.IPaaSSubscriptionController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            IPaas Subscription Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.IPaaSSubscriptionController.Get(System.String)">
+            <summary>
+            Get a list of IPaas Subscriptions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.IPaaSSubscriptionController.GetById(System.String)">
+            <summary>
+            Get an IPaas Subscription by Id
+            </summary>
+            <param name="SCOPE"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.IPaaSSubscriptionController.Post(System.String,Hive.Common.Models.IPaaSSubscriptionRequest)">
+            <summary>
+            Save a new IPaas Subscription
+            </summary>
+            <param name="SCOPE"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.ItemBarcodeController">
+            <summary>
+            Item Barcode Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemBarcodeController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Item Barcode Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemBarcodeController.Get(System.String)">
+            <summary>
+            Get a list of Item Barcodes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemBarcodeController.GetById(System.String,System.Int32)">
+            <summary>
+            Get an Item Barcode by id
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="SEQ_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemBarcodeController.Post(System.String,Hive.Common.Models.ItemBarcodeRequest)">
+            <summary>
+            Save an Item Barcode
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="SEQ_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemBarcodeController.Post(System.String,System.Int32,Hive.Common.Models.ItemBarcodeRequest)">
+            <summary>
+            Save an Item Barcode
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="SEQ_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.ItemCategoryController">
+            <summary>
+            Item Category Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemCategoryController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Item Category Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemCategoryController.Get(System.String)">
+            <summary>
+            Get a list of item categories
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemCategoryController.GetById(System.String)">
+            <summary>
+            Get an item category by id 
+            </summary>
+            <param name="CATEG_COD"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.ItemController">
+            <summary>
+            Item Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Item Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemController.Get(System.String)">
+            <summary>
+            Get a list of items
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemController.GetById(System.String)">
+            <summary>
+            Get an item by id
+            </summary>
+            <param name="ITEM_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemController.Post(System.String,Hive.Common.Models.ItemRequest)">
+            <summary>
+            Save an item
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.ItemGridDimension1Controller">
+            <summary>
+            Item Grid Dimension 1 Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemGridDimension1Controller.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Item Grid Dimension 1 Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemGridDimension1Controller.Get(System.String)">
+            <summary>
+            Get a list of Item Grid Dimension 1
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemGridDimension1Controller.GetById(System.String,System.String)">
+            <summary>
+            Get a singe item grid dimension 1 by id
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="DIM_1_UPR"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemGridDimension1Controller.Post(System.String,System.String,Hive.Common.Models.ItemGridDimension1Request)">
+            <summary>
+            Save a new Item Grid Dimension 1
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="DIM_1_UPR"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.ItemGridDimension2Controller">
+            <summary>
+            Item Grid Dimension 2 Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemGridDimension2Controller.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Item Grid Dimension 2 Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemGridDimension2Controller.Get(System.String)">
+            <summary>
+            Get a list of Item Grid Dimension 2
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemGridDimension2Controller.GetById(System.String,System.String)">
+            <summary>
+            Get an Item Grid Dimension 2 by id 
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="DIM_2_UPR"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemGridDimension2Controller.Post(System.String,System.String,Hive.Common.Models.ItemGridDimension2Request)">
+            <summary>
+            Save a new Item Grid Dimension 2
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="DIM_2_UPR"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.ItemGridDimension3Controller">
+            <summary>
+            Item Grid Dimension 3 Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemGridDimension3Controller.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Item Grid Dimension 3 Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemGridDimension3Controller.Get(System.String)">
+            <summary>
+            Get a list of Item Grid Dimension 3
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemGridDimension3Controller.GetById(System.String,System.String)">
+            <summary>
+            Get a Item Grid Dimension 3 by id 
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="DIM_3_UPR"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemGridDimension3Controller.Post(System.String,System.String,Hive.Common.Models.ItemGridDimension3Request)">
+            <summary>
+            Save a new Item Grid Dimension 3
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="DIM_3_UPR"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.ItemInventoryCellController">
+            <summary>
+            Item Inventory Cell Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemInventoryCellController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Item Inventory Cell Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemInventoryCellController.Get(System.String)">
+            <summary>
+            Get a list of all inventory cells
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemInventoryCellController.GetById(System.String,System.String,System.String)">
+            <summary>
+            Get an item inventory cell
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="DIM_1_UPR"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemInventoryCellController.GetById(System.String,System.String,System.String,System.String)">
+            <summary>
+            Get an item inventory cell
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="DIM_1_UPR"></param>
+            <param name="DIM_2_UPR"></param>9
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemInventoryCellController.GetById(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Get an item inventory cell
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="DIM_1_UPR"></param>
+            <param name="DIM_2_UPR"></param>
+            <param name="DIM_3_UPR"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemInventoryCellController.Post(System.String,System.String,System.String,Hive.Common.Models.ItemInventoryCellRequest)">
+            <summary>
+            Save an item inventory cell 
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="DIM_1_UPR"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemInventoryCellController.Post(System.String,System.String,System.String,System.String,Hive.Common.Models.ItemInventoryCellRequest)">
+            <summary>
+            Save an item inventory 
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="DIM_1_UPR"></param>
+            <param name="DIM_2_UPR"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemInventoryCellController.Post(System.String,System.String,System.String,System.String,System.String,Hive.Common.Models.ItemInventoryCellRequest)">
+            <summary>
+            Save an item inventory
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="DIM_1_UPR"></param>
+            <param name="DIM_2_UPR"></param>
+            <param name="DIM_3_UPR"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.ItemInventoryController">
+            <summary>
+            Item Inventory Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemInventoryController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Item Inventory Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemInventoryController.Get(System.String)">
+            <summary>
+            Get a list of Item Inventory 
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemInventoryController.GetById(System.String,System.String)">
+            <summary>
+            Get an Item Inventory by id 
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemInventoryController.Post(System.String,System.String,Hive.Common.Models.ItemInventoryRequest)">
+            <summary>
+            Save a new Item Inventory 
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.ItemPriceController">
+            <summary>
+            Item Price Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemPriceController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Item Price Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemPriceController.Get(System.String)">
+            <summary>
+            Get a list of item prices
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemPriceController.GetById(System.String)">
+            <summary>
+            Get an item price by id
+            </summary>
+            <param name="ITEM_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemPriceController.GetById(System.String,System.String)">
+            <summary>
+            Get an item price by id
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemPriceController.GetById(System.String,System.String,System.String)">
+            <summary>
+            Get an item price by id 
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="DIM_1_UPR"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemPriceController.GetById(System.String,System.String,System.String,System.String)">
+            <summary>
+            Get an item price by id
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="DIM_1_UPR"></param>
+            <param name="DIM_2_UPR"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemPriceController.GetById(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Get an item price by id
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="DIM_1_UPR"></param>
+            <param name="DIM_2_UPR"></param>
+            <param name="DIM_3_UPR"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemPriceController.Post(System.String,Hive.Common.Models.ItemPriceRequest)">
+            <summary>
+            Save an item price
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemPriceController.Post(System.String,System.String,Hive.Common.Models.ItemPriceRequest)">
+            <summary>
+            Save an item price
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemPriceController.Post(System.String,System.String,System.String,Hive.Common.Models.ItemPriceRequest)">
+            <summary>
+            Save an item price
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="DIM_1_UPR"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemPriceController.Post(System.String,System.String,System.String,System.String,Hive.Common.Models.ItemPriceRequest)">
+            <summary>
+            Save an item price
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="DIM_1_UPR"></param>
+            <param name="DIM_2_UPR"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemPriceController.Post(System.String,System.String,System.String,System.String,System.String,Hive.Common.Models.ItemPriceRequest)">
+            <summary>
+            Save an item price
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="LOC_ID"></param>
+            <param name="DIM_1_UPR"></param>
+            <param name="DIM_2_UPR"></param>
+            <param name="DIM_3_UPR"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.ItemSubcategoryController">
+            <summary>
+            Item Subcategory Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemSubcategoryController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Item Subcategory Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemSubcategoryController.Get(System.String)">
+            <summary>
+            Get a list of item subcategories
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemSubcategoryController.GetById(System.String,System.String)">
+            <summary>
+            Get an item subcategory 
+            </summary>
+            <param name="CATEG_COD"></param>
+            <param name="SUBCAT_COD"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.ItemUnitController">
+            <summary>
+            Item Unit Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemUnitController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Item Unit Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemUnitController.Get(System.String)">
+            <summary>
+            Get a list of Item Units 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemUnitController.GetById(System.String)">
+            <summary>
+            Get an Item Unit by id 
+            </summary>
+            <param name="UNIT"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ItemUnitController.Post(System.String,Hive.Common.Models.ItemUnitRequest)">
+            <summary>
+            Save an Item Unit
+            </summary>
+            <param name="UNIT"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.KitComponentController">
+            <summary>
+            Kit Component Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.KitComponentController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Kit Component Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.KitComponentController.Get(System.String)">
+            <summary>
+            Get a list of kit components 
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.KitComponentController.GetById(System.String,System.Int32)">
+            <summary>
+            Get a kit component by id
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="COMP_SEQ_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.KitComponentController.Post(System.String,System.Int32,Hive.Common.Models.KitComponentRequest)">
+            <summary>
+            Save a kit component 
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="COMP_SEQ_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.LocationController">
+            <summary>
+            Location Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.LocationController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Location Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.LocationController.Get(System.String)">
+            <summary>
+            Get a list of Locations 
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.LocationController.GetById(System.String)">
+            <summary>
+            Get a location by id 
+            </summary>
+            <param name="LOC_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.LocationGroupController">
+            <summary>
+            Location Group Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.LocationGroupController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Location Group Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.LocationGroupController.Get(System.String)">
+            <summary>
+            Get a list of location groups 
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.LocationGroupController.GetById(System.String)">
+            <summary>
+            Get a location group by id 
+            </summary>
+            <param name="LOC_GRP_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.LoyaltyPointAdjustmentController">
+            <summary>
+            Loyalty Point Adjustment Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.LoyaltyPointAdjustmentController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Loyalty Point Adjustment Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.LoyaltyPointAdjustmentController.Get(System.String)">
+            <summary>
+            Get a list of loyalty point adjustments
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.LoyaltyPointAdjustmentController.GetById(System.String,System.String,System.DateTime)">
+            <summary>
+            Get by id
+            </summary>
+            <param name="BAT_ID"></param>
+            <param name="CUST_NO"></param>
+            <param name="TRX_DAT"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.LoyaltyPointAdjustmentController.Post(System.String,System.String,System.DateTime,Hive.Common.Models.LoyaltyPointAdjustmentRequest)">
+            <summary>
+            Save a new loyalty point adjustment
+            </summary>
+            <param name="BAT_ID"></param>
+            <param name="CUST_NO"></param>
+            <param name="TRX_DAT"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.LoyaltyPointAdjustmentHistoryController">
+            <summary>
+            Loyalty Point Adjustment History  Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.LoyaltyPointAdjustmentHistoryController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Loyalty Point Adjustment History  Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.LoyaltyPointAdjustmentHistoryController.Get(System.String)">
+            <summary>
+            Get a list of Loyalty Point Adjustment History 
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.LoyaltyPointAdjustmentHistoryController.GetById(System.String,System.String,System.String,System.DateTime)">
+            <summary>
+            Get a Loyalty Point Adjustment History by id
+            </summary>
+            <param name="EVENT_NO"></param>
+            <param name="BAT_ID"></param>
+            <param name="CUST_NO"></param>
+            <param name="TRX_DAT"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.LoyaltyPointAdjustmentHistoryController.Post(System.String,System.String,System.String,System.DateTime,Hive.Common.Models.LoyaltyPointAdjustmentHistoryRequest)">
+            <summary>
+            Save a new Loyalty Point Adjustment History 
+            </summary>
+            <param name="EVENT_NO"></param>
+            <param name="BAT_ID"></param>
+            <param name="CUST_NO"></param>
+            <param name="TRX_DAT"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.MessageController">
+            <summary>
+            Message Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.MessageController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Location Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.MessageController.Get(System.String)">
+            <summary>
+            Get a list of Messages 
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.MessageController.GetById(System.Int64)">
+            <summary>
+            Get a Message by id 
+            </summary>
+            <param name="MAIL_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.MessageController.Post(System.Int64,Hive.Common.Models.MessageRequest)">
+            <summary>
+            Create a customer
+            </summary>
+            <param name="MAIL_ID"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.PayCodeController">
+            <summary>
+            PayCode Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.PayCodeController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            PayCode Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.PayCodeController.Get(System.String)">
+            <summary>
+            Get a list of paycodes
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.PayCodeController.GetById(System.String)">
+            <summary>
+            Get a paycode by id 
+            </summary>
+            <param name="PAY_COD"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.ReceivingHistoryController">
+            <summary>
+            Receiving History Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ReceivingHistoryController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Receiving History Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ReceivingHistoryController.Get(System.String)">
+            <summary>
+            Get a list of receiving history
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ReceivingHistoryController.GetById(System.String)">
+            <summary>
+            Get the receiving history by id 
+            </summary>
+            <param name="RECVR_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.SalesKitController">
+            <summary>
+            Sales Kit Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.SalesKitController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Sales Kit Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.SalesKitController.Get(System.String)">
+            <summary>
+            Get a list of sales kits 
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.SalesKitController.GetById(System.String)">
+            <summary>
+            Get the sales kit by id 
+            </summary>
+            <param name="ITEM_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.SalesKitController.Post(System.String,Hive.Common.Models.SalesKitRequest)">
+            <summary>
+            Save a new sales kit
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.ShipViaController">
+            <summary>
+            Ship Via Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ShipViaController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Ship Via Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.ShipViaController.Get(System.String)">
+            <summary>
+            Get a list of ship via 
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.ShipViaController.GetById(System.String)">
+            <summary>
+            Get the ship via by id 
+            </summary>
+            <param name="SHIP_VIA_COD"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.StoreController">
+            <summary>
+            Store Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.StoreController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Store Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.StoreController.Get(System.String)">
+            <summary>
+            Get a list of stores
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.StoreController.GetById(System.String)">
+            <summary>
+            Get a store by id 
+            </summary>
+            <param name="STR_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.StoreCreditActivityController">
+            <summary>
+            Store Credit Activity Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.StoreCreditActivityController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Store Credit Activity Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.StoreCreditActivityController.Get(System.String)">
+            <summary>
+            Get a list of store credit activity
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.StoreCreditActivityController.GetById(System.String,System.Int32)">
+            <summary>
+            Get a store credit activity by id 
+            </summary>
+            <param name="STC_NO"></param>
+            <param name="SEQ_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.StoreCreditActivityController.Post(System.String,Hive.Common.Models.StoreCreditActivityRequest)">
+            <summary>
+            Save a new store credit activity 
+            </summary>
+            <param name="STC_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.StoreCreditActivityController.Post(System.String,System.Int32,Hive.Common.Models.StoreCreditActivityRequest)">
+            <summary>
+            Save a new store credit activity 
+            </summary>
+            <param name="STC_NO"></param>
+            <param name="SEQ_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.StoreCreditController">
+            <summary>
+            Store Credit Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.StoreCreditController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Store Credit Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.StoreCreditController.Get(System.String)">
+            <summary>
+            Get a list of store credits 
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.StoreCreditController.GetById(System.String)">
+            <summary>
+            Get a store credit by id 
+            </summary>
+            <param name="STC_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.StoreCreditController.Post(System.String,Hive.Common.Models.StoreCreditRequest)">
+            <summary>
+            Save a store credit 
+            </summary>
+            <param name="STC_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.SubstituteItemController">
+            <summary>
+            Item Subcategory Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.SubstituteItemController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Item Subcategory Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.SubstituteItemController.Get(System.String)">
+            <summary>
+            Get a list of SubstituteItems
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.SubstituteItemController.GetById(System.String,System.String)">
+            <summary>
+            Get a substitute item
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="SUBST_ITEM_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.SubstituteItemController.Post(System.String,System.String,Hive.Common.Models.SubstituteItemRequest)">
+            <summary>
+            Create a substitute item
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="SUBST_ITEM_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.TableDataController">
+            <summary>
+            Table Data Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.TableDataController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Table Data Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.TableDataController.Get(System.String,System.String)">
+            <summary>
+            Get the table by name 
+            </summary>
+            <param name="TableName"></param>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.TimecardController">
+            <summary>
+            Timecard Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.TimecardController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Timecard Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.TimecardController.Get(System.String)">
+            <summary>
+            Get a list of Timecards
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.TimecardController.GetById(System.String,System.String,System.String)">
+            <summary>
+            Get an item subcategory 
+            </summary>
+            <param name="CATEG_COD"></param>
+            <param name="SUBCAT_COD"></param>
+            <param name="TIMCRD_DAT"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.TimecardController.Post(System.String,System.String,System.String,Hive.Common.Models.TimecardRequest)">
+            <summary>
+            Create a timecard
+            </summary>
+            <param name="STR_ID"></param>
+            <param name="USR_ID"></param>
+            <param name="TIMCRD_DAT"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.TimecardLineController">
+            <summary>
+            Item Subcategory Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.TimecardLineController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            TimecardLine Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.TimecardLineController.Get(System.String)">
+            <summary>
+            Get a list of TimecardLines
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.TimecardLineController.GetById(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            Get a TimecardLine
+            </summary>
+            <param name="STR_ID"></param>
+            <param name="USR_ID"></param>
+            <param name="TIMCRD_DAT"></param>
+            <param name="SEQ_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.TimecardLineController.Post(System.String,System.String,System.String,System.Int32,Hive.Common.Models.TimecardLineRequest)">
+            <summary>
+            Create a timecard
+            </summary>
+            <param name="STR_ID"></param>
+            <param name="USR_ID"></param>
+            <param name="TIMCRD_DAT"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.TokenController">
+            <summary>
+            Token Controller 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.TokenController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Token Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.TokenController.Get(System.String)">
+            <summary>
+            Get a token by user id
+            </summary>
+            <param name="USR_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.TokenController.Get(System.String,System.String)">
+            <summary>
+            Get a token by user id and password
+            </summary>
+            <param name="USR_ID"></param>
+            <param name="PWD"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.UserController">
+            <summary>
+            User Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.UserController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            User Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.UserController.Get(System.String)">
+            <summary>
+            Get a list of users
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.UserController.GetById(System.String)">
+            <summary>
+            Get a user by id 
+            </summary>
+            <param name="USR_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.VendorController">
+            <summary>
+            Vendor Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.VendorController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Vendor Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.VendorController.Get(System.String)">
+            <summary>
+            Get a vendor
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.VendorController.GetById(System.String)">
+            <summary>
+            Get a vendor by id
+            </summary>
+            <param name="VEND_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.VendorController.Post(System.String,Hive.Common.Models.CustomerRequest)">
+            <summary>
+            Create a vendor
+            </summary>
+            <param name="VEND_NO"></param>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Controllers.WorkgroupController">
+            <summary>
+            Workgroup Controller
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.WorkgroupController.#ctor(Hive.v2.Models.ContextModel)">
+            <summary>
+            Workgroup Controller Constructor
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Controllers.WorkgroupController.Get(System.String)">
+            <summary>
+            Get a list of workgroups
+            </summary>
+            <param name="searchJSON"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Controllers.WorkgroupController.GetById(System.String)">
+            <summary>
+            Get a workgroup by id 
+            </summary>
+            <param name="WRKGRP_ID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Filters.HttpResponseExceptionFilter">
+            <summary>
+            HTTP Response Exception Filter
+            </summary>
+        </member>
+        <member name="P:Hive.v2.Filters.HttpResponseExceptionFilter.Order">
+            <summary>
+            Order
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Filters.HttpResponseExceptionFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            On Action Execting
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:Hive.v2.Filters.HttpResponseExceptionFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            On Action Executed
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.BarcodeTypeModel">
+            <summary>
+            Contains the methods to Get and Save Barcode Types 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.BarcodeTypeModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get all barcode types based on search filter
+            </summary>
+            <param name="searchJson">Search parameters</param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.BarcodeTypeModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get the barcode type by the id
+            </summary>
+            <param name="BARCOD_ID">Barcode Type Id</param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.BarcodeTypeModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Save a new barcode type
+            </summary>
+            <param name="BARCOD_ID"></param>
+            <param name="rawRequest"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Models.BatchModel">
+            <summary>
+            Contains the methods to CRUD for Batch
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.BatchModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of Batch records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.BatchModel.GetById(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single Batch record by id
+            </summary>
+            <param name="primaryKey">Primary Key of Batch </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.BatchModel.Save(System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new Batch record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.CompanyModel">
+            <summary>
+            Contains the methods to CRUD for Company
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.CompanyModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of Company records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CompanyModel.GetById(System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single Company record by id
+            </summary>
+            <param name="primaryKey">Primary Key of Company </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CompanyModel.Save(System.Int32,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new Company record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ContextModel">
+            <summary>
+            Context Model
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ContextModel.#ctor">
+            <summary>
+            Default Context Model Constructor 
+            </summary>
+        </member>
+        <member name="T:Hive.v2.Models.CustomerCategoryModel">
+            <summary>
+            Contains the methods to CRUD for CustomerCategory
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerCategoryModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of CustomerCategory records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerCategoryModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single CustomerCategory record by id
+            </summary>
+            <param name="primaryKey">Primary Key of CustomerCategory </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerCategoryModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new CustomerCategory record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.CustomerControlModel">
+            <summary>
+            Contains the methods to CRUD for CustomerControl
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerControlModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of CustomerControl records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerControlModel.GetById(System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single CustomerControl record by id
+            </summary>
+            <param name="KEY_ID">Primary Key of CustomerControl </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerControlModel.Save(System.Int32,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new CustomerControl record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.CustomerEcommerceRenumberModel">
+            <summary>
+            Contains the methods to CRUD for CustomerEcommerceRenumber
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerEcommerceRenumberModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of CustomerEcommerceRenumber records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerEcommerceRenumberModel.GetById(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single CustomerEcommerceRenumber record by id
+            </summary>
+            <param name="primaryKey">Primary Key of CustomerEcommerceRenumber </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerEcommerceRenumberModel.Save(System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new CustomerEcommerceRenumber record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.CustomerModel">
+            <summary>
+            Contains the methods to Get and Save Customers
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get All customers by a search filter
+            </summary>
+            <param name="searchJSON"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get a customer by id
+            </summary>
+            <param name="CUST_NO"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Save a new customer
+            </summary>
+            <param name="CUST_NO"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Models.CustomerProfileCodeModel">
+            <summary>
+            Contains the methods to CRUD for CustomerProfileCode
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerProfileCodeModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of CustomerProfileCode records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerProfileCodeModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single CustomerProfileCode record by id
+            </summary>
+            <param name="primaryKey">Primary Key of CustomerProfileCode </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerProfileCodeModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new CustomerProfileCode record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.CustomerShipToAddressModel">
+            <summary>
+            Contains the methods to CRUD for CustomerShipToAddress
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerShipToAddressModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of CustomerShipToAddress records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerShipToAddressModel.GetById(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single CustomerShipToAddress record by id
+            </summary>
+            <param name="primaryKey">Primary Key of CustomerShipToAddress </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerShipToAddressModel.Save(System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new CustomerShipToAddress record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.CustomerTaxCodeModel">
+            <summary>
+            Contains the methods to CRUD for CustomerTaxCode
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerTaxCodeModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of CustomerTaxCode records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerTaxCodeModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single CustomerTaxCode record by id
+            </summary>
+            <param name="primaryKey">Primary Key of CustomerTaxCode </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.CustomerTaxCodeModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new CustomerTaxCode record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.DistributionModel">
+            <summary>
+            Contains the methods to CRUD for Distribution
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.DistributionModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of Distribution records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DistributionModel.GetById(System.String,System.String,System.String,System.DateTime,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single Distribution record by id
+            </summary>
+            <param name="primaryKey">Primary Key of Distribution </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DistributionModel.Save(System.String,System.String,System.String,System.DateTime,System.Int32,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new Distribution record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.DocumentActivityModel">
+            <summary>
+            Contains the methods to CRUD for DocumentActivity
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentActivityModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of DocumentActivity records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentActivityModel.GetById(System.Int64,System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single DocumentActivity record by id
+            </summary>
+            <param name="primaryKey">Primary Key of DocumentActivity </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentActivityModel.Save(System.Int64,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new DocumentActivity record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.DocumentGiftCardModel">
+            <summary>
+            Contains the methods to CRUD for DocumentGiftCard
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentGiftCardModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of DocumentGiftCard records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentGiftCardModel.GetById(System.Int64,System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single DocumentGiftCard record by id
+            </summary>
+            <param name="primaryKey">Primary Key of DocumentGiftCard </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentGiftCardModel.Save(System.Int64,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new DocumentGiftCard record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentHistoryModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get All documents by a search filter
+            </summary>
+            <param name="searchJson"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentHistoryModel.GetById(System.DateTime,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get a document by id
+            </summary>
+            <param name="DOC_ID"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Models.DocumentLineModel">
+            <summary>
+            Contains the methods to CRUD for DocumentLine
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentLineModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of DocumentLine records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentLineModel.GetById(System.Int64,System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single DocumentLine record by id
+            </summary>
+            <param name="primaryKey">Primary Key of DocumentLine </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentLineModel.Save(System.Int64,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new DocumentLine record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.DocumentModel">
+            <summary>
+            Contains the methods to Get and Save Documents
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get All documents by a search filter
+            </summary>
+            <param name="searchJson"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get a document by id
+            </summary>
+            <param name="DOC_ID"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Save a new document
+            </summary>
+            <param name="DOC_ID"></param>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Models.DocumentNoteModel">
+            <summary>
+            Contains the methods to CRUD for DocumentNote
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentNoteModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of DocumentNote records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentNoteModel.GetById(System.Int64,System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single DocumentNote record by id
+            </summary>
+            <param name="primaryKey">Primary Key of DocumentNote </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentNoteModel.Save(System.Int64,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new DocumentNote record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.DocumentPaymentModel">
+            <summary>
+            Contains the methods to CRUD for DocumentPayment
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentPaymentModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of DocumentPayment records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentPaymentModel.GetById(System.Int64,System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single DocumentPayment record by id
+            </summary>
+            <param name="primaryKey">Primary Key of DocumentPayment </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentPaymentModel.Save(System.Int64,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new DocumentPayment record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.DocumentTaxModel">
+            <summary>
+            Contains the methods to CRUD for DocumentTax
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentTaxModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of DocumentTax records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentTaxModel.GetById(System.Int64,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single DocumentTax record by id
+            </summary>
+            <param name="primaryKey">Primary Key of DocumentTax </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.DocumentTaxModel.Save(System.Int64,System.String,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new DocumentTax record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.EcommerceCategoryAssignmentModel">
+            <summary>
+            Contains the methods to CRUD for EcommerceCategoryAssignment
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.EcommerceCategoryAssignmentModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of EcommerceCategoryAssignment records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.EcommerceCategoryAssignmentModel.GetById(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single EcommerceCategoryAssignment record by id
+            </summary>
+            <param name="primaryKey">Primary Key of EcommerceCategoryAssignment </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.EcommerceCategoryAssignmentModel.Save(System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new EcommerceCategoryAssignment record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.EcommerceCategoryModel">
+            <summary>
+            Contains the methods to CRUD for EcommerceCategory
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.EcommerceCategoryModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of EcommerceCategory records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.EcommerceCategoryModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single EcommerceCategory record by id
+            </summary>
+            <param name="primaryKey">Primary Key of EcommerceCategory </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.EcommerceCategoryModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new EcommerceCategory record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.GiftCardActivityModel">
+            <summary>
+            Contains the methods to CRUD for GiftCardActivity
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.GiftCardActivityModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of GiftCardActivity records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.GiftCardActivityModel.GetById(System.String,System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single GiftCardActivity record by id
+            </summary>
+            <param name="GFC_NO">Primary Key of GiftCardActivity </param>
+            <param name="context"></param>
+            <param name="SEQ_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.GiftCardActivityModel.Save(System.String,System.Nullable{System.Int32},System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Saves a new GiftCardActivity record
+            </summary>
+            <param name="GFC_NO"></param>
+            <param name="SEQ_NO"></param>
+            <param name="rawRequest"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.GiftCardCodeModel">
+            <summary>
+            Contains the methods to CRUD for GiftCardCode
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.GiftCardCodeModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of GiftCardCode records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.GiftCardCodeModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single GiftCardCode record by id
+            </summary>
+            <param name="primaryKey">Primary Key of GiftCardCode </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.GiftCardCodeModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new GiftCardCode record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.GiftCardModel">
+            <summary>
+            Contains the methods to CRUD for GiftCard
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.GiftCardModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of GiftCard records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.GiftCardModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single GiftCard record by id
+            </summary>
+            <param name="primaryKey">Primary Key of GiftCard </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.GiftCardModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new GiftCard record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.GridStructureModel">
+            <summary>
+            Contains the methods to CRUD for GridStructure
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.GridStructureModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of GridStructure records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.GridStructureModel.GetById(System.String,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single GridStructure record by id
+            </summary>
+            <param name="primaryKey">Primary Key of GridStructure </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.GridStructureModel.Save(System.String,System.String,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new GridStructure record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.IPaaSSubscriptionModel">
+            <summary>
+            Contains the methods to CRUD for IPaaSSubscription
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.IPaaSSubscriptionModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of IPaaSSubscription records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.IPaaSSubscriptionModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single IPaaSSubscription record by id
+            </summary>
+            <param name="primaryKey">Primary Key of IPaaSSubscription </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.IPaaSSubscriptionModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new IPaaSSubscription record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ItemBarcodeModel">
+            <summary>
+            Contains the methods to CRUD for ItemBarcode
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ItemBarcodeModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ItemBarcode records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemBarcodeModel.GetById(System.String,System.Nullable{System.Int32},Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ItemBarcode record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ItemBarcode </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemBarcodeModel.Save(System.String,System.Nullable{System.Int32},System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ItemBarcode record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ItemCategoryModel">
+            <summary>
+            Contains the methods to CRUD for ItemCategory
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ItemCategoryModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ItemCategory records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemCategoryModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ItemCategory record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ItemCategory </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemCategoryModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ItemCategory record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ItemGridDimension1Model">
+            <summary>
+            Contains the methods to CRUD for ItemGridDimension1
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ItemGridDimension1Model.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ItemGridDimension1 records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemGridDimension1Model.GetById(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ItemGridDimension1 record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ItemGridDimension1 </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemGridDimension1Model.Save(System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ItemGridDimension1 record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ItemGridDimension2Model">
+            <summary>
+            Contains the methods to CRUD for ItemGridDimension2
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ItemGridDimension2Model.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ItemGridDimension2 records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemGridDimension2Model.GetById(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ItemGridDimension2 record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ItemGridDimension2 </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemGridDimension2Model.Save(System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ItemGridDimension2 record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ItemGridDimension3Model">
+            <summary>
+            Contains the methods to CRUD for ItemGridDimension3
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ItemGridDimension3Model.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ItemGridDimension3 records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemGridDimension3Model.GetById(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ItemGridDimension3 record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ItemGridDimension3 </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemGridDimension3Model.Save(System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ItemGridDimension3 record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ItemInventoryCellModel">
+            <summary>
+            Contains the methods to CRUD for ItemInventoryCell
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ItemInventoryCellModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ItemInventoryCell records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemInventoryCellModel.GetById(System.String,System.String,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ItemInventoryCell record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ItemInventoryCell </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemInventoryCellModel.Save(System.String,System.String,System.String,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ItemInventoryCell record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ItemInventoryModel">
+            <summary>
+            Contains the methods to CRUD for ItemInventory
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ItemInventoryModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ItemInventory records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemInventoryModel.GetById(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ItemInventory record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ItemInventory </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemInventoryModel.Save(System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ItemInventory record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ItemModel">
+            <summary>
+            Contains the methods to Get and Save Items
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ItemModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get All Items by a search filter
+            </summary>
+            <param name="searchJson"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get an Item by id
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Save a new Item
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="rawRequest"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Models.ItemPriceModel">
+            <summary>
+            Contains the methods to CRUD for ItemPrice
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ItemPriceModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ItemPrice records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemPriceModel.GetById(System.String,System.String,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ItemPrice record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ItemPrice </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemPriceModel.Save(System.String,System.String,System.String,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ItemPrice record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ItemSubcategoryModel">
+            <summary>
+            Contains the methods to CRUD for ItemSubcategory
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ItemSubcategoryModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ItemSubcategory records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemSubcategoryModel.GetById(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ItemSubcategory record by id
+            </summary>
+            <param name="SUBCAT_COD">Primary Key of ItemSubcategory </param>
+            <param name="context"></param>
+            <param name="CATEG_COD"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemSubcategoryModel.Save(System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Saves a new ItemSubcategory record
+            </summary>
+            <param name="SUBCAT_COD"></param>
+            <param name="CATEG_COD"></param>
+            <param name="rawRequest"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ItemUnitModel">
+            <summary>
+            Contains the methods to CRUD for ItemUnit
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ItemUnitModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ItemUnit records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemUnitModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ItemUnit record by id
+            </summary>
+            <param name="UNIT">Primary Key of ItemUnit </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ItemUnitModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ItemUnit record
+             </summary>
+             <param name="UNIT"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.KitComponentModel">
+            <summary>
+            Contains the methods to CRUD for KitComponent
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.KitComponentModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of KitComponent records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.KitComponentModel.GetById(System.String,System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single KitComponent record by id
+            </summary>
+            <param name="primaryKey">Primary Key of KitComponent </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.KitComponentModel.Save(System.String,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new KitComponent record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.LocationGroupLocationModel">
+            <summary>
+            Contains the methods to CRUD for LocationGroupLocation
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.LocationGroupLocationModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of LocationGroupLocation records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.LocationGroupLocationModel.GetById(System.String,System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single LocationGroupLocation record by id
+            </summary>
+            <param name="primaryKey">Primary Key of LocationGroupLocation </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.LocationGroupLocationModel.Save(System.String,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new LocationGroupLocation record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.LocationGroupModel">
+            <summary>
+            Contains the methods to CRUD for LocationGroup
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.LocationGroupModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of LocationGroup records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.LocationGroupModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single LocationGroup record by id
+            </summary>
+            <param name="primaryKey">Primary Key of LocationGroup </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.LocationGroupModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new LocationGroup record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.LocationModel">
+            <summary>
+            Contains the methods to CRUD for Location
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.LocationModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of Location records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.LocationModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single Location record by id
+            </summary>
+            <param name="LOC_ID">Primary Key of Location </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.LocationModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new Location record
+             </summary>
+             <param name="LOC_ID"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.LoyaltyPointAdjustmentHistoryModel">
+            <summary>
+            Contains the methods to CRUD for LoyaltyPointAdjustmentHistory
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.LoyaltyPointAdjustmentHistoryModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of LoyaltyPointAdjustmentHistory records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.LoyaltyPointAdjustmentHistoryModel.GetById(System.String,System.String,System.String,System.DateTime,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single LoyaltyPointAdjustmentHistory record by id
+            </summary>
+            <param name="primaryKey">Primary Key of LoyaltyPointAdjustmentHistory </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.LoyaltyPointAdjustmentHistoryModel.Save(System.String,System.String,System.String,System.DateTime,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new LoyaltyPointAdjustmentHistory record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.LoyaltyPointAdjustmentModel">
+            <summary>
+            Contains the methods to CRUD for LoyaltyPointAdjustment
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.LoyaltyPointAdjustmentModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of LoyaltyPointAdjustment records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.LoyaltyPointAdjustmentModel.GetById(System.String,System.String,System.DateTime,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single LoyaltyPointAdjustment record by id
+            </summary>
+            <param name="primaryKey">Primary Key of LoyaltyPointAdjustment </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.LoyaltyPointAdjustmentModel.Save(System.String,System.String,System.DateTime,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new LoyaltyPointAdjustment record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="M:Hive.v2.Models.MessageModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of Message records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.MessageModel.GetById(System.Int64,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single Message record by id
+            </summary>
+            <param name="MAIL_ID">Primary Key of Location </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.MessageModel.Save(System.Int64,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new Message record
+             </summary>
+             <param name="MAIL_ID"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.PackageTrackingNoModel">
+            <summary>
+            Contains the methods to CRUD for PackageTrackingNo
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.PackageTrackingNoModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of PackageTrackingNo records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.PackageTrackingNoModel.GetById(System.Int64,System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single PackageTrackingNo record by id
+            </summary>
+            <param name="primaryKey">Primary Key of PackageTrackingNo </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.PackageTrackingNoModel.Save(System.Int64,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new PackageTrackingNo record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.PayCodeModel">
+            <summary>
+            Contains the methods to CRUD for PayCode
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.PayCodeModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of PayCode records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.PayCodeModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single PayCode record by id
+            </summary>
+            <param name="primaryKey">Primary Key of PayCode </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.PayCodeModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new PayCode record
+             </summary>
+             <param name="PAY_COD"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ReceivingHistoryCellLocModel">
+            <summary>
+            Contains the methods to CRUD for ReceivingHistoryCellLoc
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryCellLocModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ReceivingHistoryCellLoc records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryCellLocModel.GetById(System.String,System.Int32,System.String,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ReceivingHistoryCellLoc record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ReceivingHistoryCellLoc </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryCellLocModel.Save(System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ReceivingHistoryCellLoc record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ReceivingHistoryCellModel">
+            <summary>
+            Contains the methods to CRUD for ReceivingHistoryCell
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryCellModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ReceivingHistoryCell records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryCellModel.GetById(System.String,System.Int32,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ReceivingHistoryCell record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ReceivingHistoryCell </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryCellModel.Save(System.String,System.Int32,System.String,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ReceivingHistoryCell record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ReceivingHistoryHeaderModel">
+            <summary>
+            Contains the methods to CRUD for ReceivingHistoryHeader
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryHeaderModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ReceivingHistoryHeader records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryHeaderModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ReceivingHistoryHeader record by id
+            </summary>
+            <param name="RECVR_NO">Primary Key of ReceivingHistoryHeader </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryHeaderModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ReceivingHistoryHeader record
+             </summary>
+             <param name="RECVR_NO"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ReceivingHistoryLineLocModel">
+            <summary>
+            Contains the methods to CRUD for ReceivingHistoryLineLoc
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryLineLocModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ReceivingHistoryLineLoc records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryLineLocModel.GetById(System.String,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ReceivingHistoryLineLoc record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ReceivingHistoryLineLoc </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryLineLocModel.Save(System.String,System.Int32,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ReceivingHistoryLineLoc record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ReceivingHistoryLineModel">
+            <summary>
+            Contains the methods to CRUD for ReceivingHistoryLine
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryLineModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ReceivingHistoryLine records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryLineModel.GetById(System.String,System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ReceivingHistoryLine record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ReceivingHistoryLine </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryLineModel.Save(System.String,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ReceivingHistoryLine record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ReceivingHistoryModel">
+            <summary>
+            Contains the methods to get Receiving History 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get All Receiving History by a search filter
+            </summary>
+            <param name="searchJson"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get a Receiving History by id
+            </summary>
+            <param name="RECVR_NO"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Models.ReceivingHistoryNoteModel">
+            <summary>
+            Contains the methods to CRUD for ReceivingHistoryNote
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryNoteModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ReceivingHistoryNote records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryNoteModel.GetById(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ReceivingHistoryNote record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ReceivingHistoryNote </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryNoteModel.Save(System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ReceivingHistoryNote record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ReceivingHistorySerialModel">
+            <summary>
+            Contains the methods to CRUD for ReceivingHistorySerial
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistorySerialModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ReceivingHistorySerial records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistorySerialModel.GetById(System.String,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ReceivingHistorySerial record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ReceivingHistorySerial </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistorySerialModel.Save(System.String,System.Int32,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ReceivingHistorySerial record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ReceivingHistoryTaxModel">
+            <summary>
+            Contains the methods to CRUD for ReceivingHistoryTax
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryTaxModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ReceivingHistoryTax records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryTaxModel.GetById(System.String,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ReceivingHistoryTax record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ReceivingHistoryTax </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryTaxModel.Save(System.String,System.String,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ReceivingHistoryTax record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ReceivingHistoryVoucherActivityModel">
+            <summary>
+            Contains the methods to CRUD for ReceivingHistoryVoucherActivity
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryVoucherActivityModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ReceivingHistoryVoucherActivity records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryVoucherActivityModel.GetById(System.String,System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ReceivingHistoryVoucherActivity record by id
+            </summary>
+            <param name="primaryKey">Primary Key of ReceivingHistoryVoucherActivity </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ReceivingHistoryVoucherActivityModel.Save(System.String,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ReceivingHistoryVoucherActivity record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.SalesKitModel">
+            <summary>
+            Contains the methods to CRUD for SalesKit
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.SalesKitModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of SalesKit records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.SalesKitModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single SalesKit record by id
+            </summary>
+            <param name="ITEM_NO">Primary Key of SalesKit </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.SalesKitModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new SalesKit record
+             </summary>
+             <param name="ITEM_NO"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.ShipViaCodeModel">
+            <summary>
+            Contains the methods to CRUD for ShipViaCode
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.ShipViaCodeModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ShipViaCode records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ShipViaCodeModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ShipViaCode record by id
+            </summary>
+            <param name="SHIP_VIA_COD">Primary Key of ShipViaCode </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.ShipViaCodeModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new ShipViaCode record
+             </summary>
+             <param name="SHIP_VIA_COD"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.StoreCreditActivityModel">
+            <summary>
+            Contains the methods to CRUD for StoreCreditActivity
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.StoreCreditActivityModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a list of StoreCreditActivity records based on search filter
+            </summary>
+            <param name="searchJson">Search parameters</param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.StoreCreditActivityModel.GetById(System.String,System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single StoreCreditActivity record by id
+            </summary>
+            <param name="STC_NO">Primary Key of StoreCreditActivity </param>
+            <param name="context"></param>
+            <param name="SEQ_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.StoreCreditActivityModel.Save(System.String,System.Nullable{System.Int32},System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Saves a new StoreCreditActivity record
+            </summary>
+            <param name="STC_NO"></param>
+            <param name="SEQ_NO"></param>
+            <param name="rawRequest"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.StoreCreditModel">
+            <summary>
+            Contains the methods to CRUD for StoreCredit
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.StoreCreditModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of StoreCredit records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.StoreCreditModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single StoreCredit record by id
+            </summary>
+            <param name="STC_NO">Primary Key of StoreCredit </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.StoreCreditModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new StoreCredit record
+             </summary>
+             <param name="primaryKey"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.StoreModel">
+            <summary>
+            Contains the methods to CRUD for Store
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.StoreModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of Store records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.StoreModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single Store record by id
+            </summary>
+            <param name="STR_ID">Primary Key of Store </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.StoreModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new Store record
+             </summary>
+             <param name="STR_ID"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="M:Hive.v2.Models.SubstituteItemModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of ItemSubcategory records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.SubstituteItemModel.GetById(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single ItemSubcategory record by id
+            </summary>
+            <param name="ITEM_NO">Primary Key of ItemSubcategory </param>
+            <param name="context"></param>
+            <param name="SUBST_ITEM_NO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.SubstituteItemModel.Save(System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Saves a new SubstituteItem record
+            </summary>
+            <param name="ITEM_NO"></param>
+            <param name="SUBST_ITEM_NO"></param>
+            <param name="rawRequest"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.TableDataModel">
+            <summary>
+            Contains the method to get table data 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.TableDataModel.GetAll(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get All table data by a search filter
+            </summary>
+            <param name="tableName"></param>
+            <param name="searchJSON"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Models.TableInformationModel">
+            <summary>
+            Contains the method to get table information 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.TimecardLineModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of Timecard records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.TimecardLineModel.GetById(System.String,System.String,System.String,System.Int32,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single TimecardLine record by id
+            </summary>
+            <param name="SUBCAT_COD">Primary Key of ItemSubcategory </param>
+            <param name="context"></param>
+            <param name="CATEG_COD"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.TimecardLineModel.Save(System.String,System.String,System.String,System.Int32,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Saves a new Timecard record
+            </summary>
+            <param name="SUBCAT_COD"></param>
+            <param name="CATEG_COD"></param>
+            <param name="rawRequest"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:Hive.v2.Models.TimecardModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of Timecard records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.TimecardModel.GetById(System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single Timecard record by id
+            </summary>
+            <param name="SUBCAT_COD">Primary Key of ItemSubcategory </param>
+            <param name="context"></param>
+            <param name="CATEG_COD"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.TimecardModel.Save(System.String,System.String,System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Saves a new Timecard record
+            </summary>
+            <param name="SUBCAT_COD"></param>
+            <param name="CATEG_COD"></param>
+            <param name="rawRequest"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Hive.v2.Models.TokenModel">
+            <summary>
+            Contains the methods to get Tokens 
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.TokenModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get a token by id
+            </summary>
+            <param name="USR_ID"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.TokenModel.GetById(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get a token by id and password
+            </summary>
+            <param name="USR_ID"></param>
+            <param name="PWD"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Models.UpdateQueueModel">
+            <summary>
+            Contains the method to get an update queue
+            </summary>
+        </member>
+        <member name="T:Hive.v2.Models.UserModel">
+            <summary>
+            Contains the methods to CRUD for User
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.UserModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Gets a list of User records based on search filter
+             </summary>
+            <param name="searchJson">Search parameters</param>
+             <param name="context"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.UserModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Gets a single User record by id
+            </summary>
+            <param name="USR_ID">Primary Key of User </param>
+            <param name="context"></param>
+            <param name="transaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.UserModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+             <summary>
+             Saves a new User record
+             </summary>
+             <param name="USR_ID"></param>
+            <param name="rawRequest"></param>
+             <param name="context"></param>
+        </member>
+        <member name="M:Hive.v2.Models.VendorModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get All Vendors by a search filter
+            </summary>
+            <param name="searchJSON"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.VendorModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get a Vendor by id
+            </summary>
+            <param name="VEND_NO"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.VendorModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Save a new Vendor
+            </summary>
+            <param name="VEND_NO"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Hive.v2.Models.WorkgroupModel">
+            <summary>
+            Contains the methods to Get workgroups
+            </summary>
+        </member>
+        <member name="M:Hive.v2.Models.WorkgroupModel.GetAll(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get All workgroups by a search filter
+            </summary>
+            <param name="searchJson"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.WorkgroupModel.GetById(System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Get a workgroup by id
+            </summary>
+            <param name="WRKGRP_ID"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hive.v2.Models.WorkgroupModel.Save(System.String,System.String,Hive.v2.Models.ContextModel)">
+            <summary>
+            Save a new barcode type
+            </summary>
+            <param name="BARCOD_ID"></param>
+            <param name="request"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
